@@ -688,6 +688,10 @@ public class ConsentManagerImpl implements ConsentManager {
     @Override
     public boolean isReceiptExist(String receiptId, String tenantAwareUsername, int tenantId) throws
             ConsentManagementException {
+
+        if (!isCaseSensitiveUserNameEnabled(tenantAwareUsername)) {
+            tenantAwareUsername = getLowerCaseUserName(tenantAwareUsername);
+        }
         return getReceiptsDAO(receiptDAOs).isReceiptExist(receiptId, tenantAwareUsername, tenantId);
     }
 
