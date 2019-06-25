@@ -200,9 +200,7 @@ public class ConsentConstants {
                                                                " not for PII category ID: %s."),
         ERROR_CODE_GETTING_USER_STORE_MANAGER("CM_00089", "Error while retrieving the user store manager for the user"
                 + " name: %s."),
-
-        ERROR_CODE_GETTING_TENANT_ID("CM_00090", "Error in obtaining tenant ID from tenant domain: %s.");
-                                                               " not for PII category ID: %s."),
+        ERROR_CODE_GETTING_TENANT_ID("CM_00090", "Error in obtaining tenant ID from tenant domain: %s."),
         ERROR_CODE_ROLL_BACK_CONNECTION("CM_00089", "Transaction rollback connection error occurred while creating"
                 + " database tables for Consent Management.");
 
